@@ -56,11 +56,11 @@ jobs:
         with:
           context: ./user-service
           push: true
-          tags: oliashish3/user-service:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/user-service:latest
 
       - name: Build Product Service Docker Image
         uses: docker/build-push-action@v5
         with:
           context: ./product-service
           push: true
-          tags: oliashish3/product-service:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/product-service:latest
