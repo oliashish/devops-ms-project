@@ -25,7 +25,7 @@ jobs:
         with:
           args: >
             -Dsonar.organization="oliashish"
-            -Dsonar.projectKey="devops-ms-project"
+            -Dsonar.projectKey="oliashish_devops-ms-project"
 
       - name: Build User Service
         run: |
