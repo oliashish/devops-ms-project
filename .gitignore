@@ -1,0 +1,29 @@
+# Binaries for programs
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Test binary
+*.test
+
+# Output of 'go build'
+*.out
+
+# Dependency directories
+vendor/
+
+# Go module cache
+.go/
+
+# Environment variables for local development (if you ever add them)
+.env
+
+# IDE specific files
+.idea/
+.vscode/
+*.sublime-workspace
+*.iml
+
+# Docker specific files
+.dockerignore
