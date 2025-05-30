@@ -24,7 +24,7 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         with:
           args: >
-            -Dsonar.organization="Ashish Oli"
+            -Dsonar.organization="oliashish"
             -Dsonar.projectKey="devops-ms-project"
 
       - name: Build User Service
