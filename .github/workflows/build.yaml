@@ -30,15 +30,6 @@ jobs:
         with:
           go-version: "1.22"
 
-      - name: Static Code Analysis using SonarCloud
-        uses: sonarsource/sonarcloud-github-action@master
-        env:
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        with:
-          args: >
-            -Dsonar.organization="oliashish"
-            -Dsonar.projectKey="oliashish_devops-ms-project"
-
       - name: Build User Service
         run: |
           cd user-service
