@@ -113,3 +113,4 @@ k8s-manifest
 > 3. These services don't talk to each other yet
 > 4. Using multi-arch build for docker images for k3s running on rpi
 > 5. No tests written
+> 6. No multi-environment support i.e no support of flags and optiong for dev, stage or prod.
