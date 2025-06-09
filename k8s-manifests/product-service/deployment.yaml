@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: product-service-deployment
+  namespace: product-service
+  labels:
+    app: product-service
+spec:
+  replicas: 1 # You can adjust replicas as needed
+  selector:
+    matchLabels:
+      app: product-service
+  template:
+    metadata:
+      labels:
+        app: product-service
+    spec:
+      containers:
+        - name: product-service-container
+          image: v57pl22ch9omxpexyttvzrxvpj3m7/product-service
+          ports:
+            - containerPort: 8081
+          resources:
+            requests:
+              memory: "64Mi"
+              cpu: "50m"
+            limits:
+              memory: "128Mi"
+              cpu: "100m"
